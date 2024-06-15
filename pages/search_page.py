@@ -1,4 +1,4 @@
-from playwright.async_api import Page
+from playwright.async_api import Page, expect
 
 from pages.base_page import BasePage
 
@@ -8,4 +8,5 @@ class SearchPage(BasePage):
         super().__init__(page)
 
     async def wait_page_load(self, value):
-        await self.page.get_by_text(f"results for \"{value}\"").is_visible(timeout=5000)
+        results_loc = self.page.get_by_text(f"results for \"{value}\"")
+        await expect(results_loc).to_be_visible()
