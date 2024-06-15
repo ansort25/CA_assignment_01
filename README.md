@@ -1,8 +1,8 @@
 # CA_assignment_01
 
 Using any programming language of your choice (Java, JavaScript, Python, etc.) please create a small automation project with a framework of your choice (Selenium, Playwright, Cypress, etc.) that automates following scenarios:
-Access the following URL: https://cloudacademy.com/ execute following search operations into the search area:
-- Search for AWS, GCP and Azure. Assert the presence of correct results into the plage.
+- Access the following URL: https://cloudacademy.com/ execute following search operations into the search area:
+  - Search for AWS, GCP and Azure. Assert the presence of correct results into the plage.
 - Move to pricing page and:
   - Assert presence of the expected pricing plans
   - Enter the Small teams pricing plan detail selecting the button start now
