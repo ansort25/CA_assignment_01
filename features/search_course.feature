@@ -1,4 +1,4 @@
-Feature: search courses on cloudacademy
+Feature: Search courses on Cloudacademy
 
   Scenario: Search aws courses
     Given Cloudacademy page is accessed

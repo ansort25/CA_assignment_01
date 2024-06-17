@@ -1,4 +1,4 @@
-from playwright.async_api import Page, Keyboard
+from playwright.async_api import Page
 
 
 class BasePage:

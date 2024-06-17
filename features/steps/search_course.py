@@ -50,7 +50,7 @@ async def check_search_page(context):
 async def check_courses_on_search_page(context, value):
     page = SearchPage(context.page)
     await expect(page.page).to_have_url(re.compile(f".*{value}"))
+    await page.check_results_count_for_search(value)
     await page.wait_page_load(value)
-    filename = f'{value}.png'
-    # FIXME check why screenshot is taking so much
-    await page.page.screenshot(path=os.path.join(os.path.curdir, filename), timeout=10000, full_page=False)
+    await page.check_results_for_search(value)
+
