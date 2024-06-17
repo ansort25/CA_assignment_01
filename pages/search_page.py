@@ -2,8 +2,8 @@ import re
 
 from playwright.async_api import Page, expect
 
-from pages.base_page import BasePage
 from locators.search_locators import SearchLocators
+from pages.base_page import BasePage
 
 
 class SearchPage(BasePage):

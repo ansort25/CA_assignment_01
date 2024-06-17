@@ -13,6 +13,9 @@ class LandingPage(BasePage):
         await self.page.goto("https://cloudacademy.com", timeout=5000)
         await self.page.get_by_role("link", name="Allow selection").click()
 
+    async def navigate_to(self, menu):
+        await self.page.get_by_role("banner").get_by_role("link", name=menu).click()
+
     async def select_searchbox(self):
         await self.search_box.click()
 

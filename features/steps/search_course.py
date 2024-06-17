@@ -1,4 +1,3 @@
-import os.path
 import re
 
 from behave import given, when, then

@@ -13,3 +13,22 @@ Implement test reporting with a reporting tool of your choice (allure, TestNg, e
 Extra points wil be assigned if the test scenario will use gherkin language ( leveraging Cucumber, Behave, etc.)
 
 Please share a link to the project (google drive with package's or even better GitHub project) to the recruitment team
+
+---
+Run on Python 3.12.
+Playwright with Behave and Behavex for reporting.
+
+Steps to setup project:
+- install requirements.txt
+- from the terminal run the command 'playwright install' to install the playwright browsers
+
+To run tests:
+- with reports run in terminal the command 'behavex features/'
+- without reports run in terminal the command 'behave'
+
+Reports will be generated in folder output.
+
+---
+Notes:
+- some optimizations can be made
+- some evidences like screenshots can be added in order to add more traceability
