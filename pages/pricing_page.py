@@ -37,3 +37,6 @@ class PricingPage(BasePage):
             price_loc = self.page.locator(f'xpath={PricingLocators.PLANS_GRID}/div[{plan['index']}]{PricingLocators.PRICE_PER_PLAN}')
             await expect(price_loc).to_be_visible()
             await expect(price_loc).to_have_text(plan['expected_price'])
+
+    async def click_small_teams(self):
+        await self.page.get_by_role("button", name="Start Now").click()
